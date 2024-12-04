@@ -1,0 +1,20 @@
+students = []
+
+def student_info():
+    Student_id = input('Enter student ID:')
+    student_name = input('Enter student name:')
+    student_phone = input('Enter student phone number:')
+    
+    entry = {
+        'Student ID': Student_id,
+        'Student Name':student_name,
+        'Student Phone':student_phone,
+        }
+
+    students.append(entry)
+
+def print_entries():
+    print('\nAll student entries')
+    for entry in students:
+        print(f"ID:{entry['Student ID']},Name:{entry['Student Name']},Phone:{entry['Student Phone']}")
+        
